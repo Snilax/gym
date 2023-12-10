@@ -1,0 +1,148 @@
+.info {
+    margin: 0 auto;
+    border-radius: 24px;
+    width: 75%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include media(md) {
+        width: 100%;
+    }
+
+    @include media(sm) {
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        gap: 50px;
+        padding: 40px;
+
+        &-img {
+            width: 50px;
+        }
+
+        .-rotate-90 {
+            display: flex;
+            justify-content: center;
+        }
+
+        &-container {
+            align-items: center;
+            height: 100px;
+
+        }
+    }
+
+    &-trainers {
+        margin-top: 350px;
+        background: url("../images/dark-bg.png");
+        background-position-y: 110px;
+        background-repeat-y: no-repeat;
+        background-repeat-x: repeat;
+    }
+
+    &-container {
+        display: flex;
+        align-items: center;
+
+        .-rotate-90 {
+            font-family: $fallback;
+            height: 20px;
+            font-size: 42px;
+            font-weight: 900;
+        }
+    }
+
+
+}
+
+.coach {
+    background: url("../images/dark-bg.png");
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include media(sm) {
+        margin-top: 50px;
+
+    }
+
+    &-title {
+        font-weight: 900;
+
+        @include media(sm) {
+            margin-top: 50px;
+        }
+    }
+
+    &-sub {
+        font-family: $fallback;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+
+    &-prof {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-list {
+        display: flex;
+        gap: 20px;
+        padding: 55px;
+    }
+
+    &-desc {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-page {
+        margin-top: 80px;
+
+        &-desc {
+            margin-top: 10px;
+        }
+
+        &-name {
+            font-family: $fallback;
+            font-weight: 700;
+            font-size: 28px;
+        }
+    }
+
+}
+
+.rating {
+    @include media(md) {
+        img {
+            height: 30px;
+        }
+    }
+}
+
+.stats {
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+}

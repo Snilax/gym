@@ -1,0 +1,16 @@
+@use 'sass:math';
+@import "./index.css";
+@import "./variables";
+@import "./extend";
+@import "./mixins";
+@import "./reset";
+@import "./global";
+
+@import "./hero/hero";
+@import "./about/about";
+@import "./classes/classes";
+@import "./info/info";
+@import "./plan/plan";
+@import "./form/form";
+@import "./form/contact-form";
+@import "./footer/footer";

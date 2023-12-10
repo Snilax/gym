@@ -1,0 +1,59 @@
+@import "nav";
+
+@include grid();
+
+.hero {
+    background-image: url("../../../src/images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include media(lg) {
+        background-position: 60%;
+
+    }
+
+    .content {}
+
+    .rect {
+        &__tp {
+            border-top: 9px solid rgba(205, 205, 205, 0);
+            border-right: 9px solid rgba(205, 205, 205, 0);
+            border-bottom: 9px solid rgba(12, 9, 9, 0);
+            background: rgba(205, 205, 205, 0.15);
+
+            &-row {
+                display: flex;
+                border-top: 9px solid rgba(205, 205, 205, 0);
+                border-right: 9px solid rgba(205, 205, 205, 0);
+                border-bottom: 9px solid rgba(205, 205, 205, 0);
+                background: rgba(205, 205, 205, 0.15);
+            }
+        }
+
+        &__orange {
+            background-color: $orange;
+            border: solid 9px #F66000;
+        }
+    }
+
+    .title-desc {
+        font-family: $default-font-name;
+        color: $gray-font;
+    }
+
+}
+
+.start-btn {
+    font-family: $poiret-font;
+    background: $orange;
+    display: block;
+}
+
+.nav__item {
+    transition: all .3s;
+
+    &:hover {
+        transform: scale(1.1);
+        color: #F66000
+    }
+}

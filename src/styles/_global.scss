@@ -1,0 +1,48 @@
+@include grid ();
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $main-font;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 1.6px;
+    font-size: 16px;
+    color: $white-color;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: $container-max-width;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+h1 {
+    @include h1;
+
+}
+
+h2 {
+    @include h2;
+
+    @include media(sm) {
+        font-size: 1.5em
+    }
+}
+
+h3 {
+    @include h3;
+
+    @include media(sm) {
+        font-size: 1em;
+    }
+}
+
+.md-mobile-only {
+    @include media-m (md) {
+        display: none !important;
+    }
+}

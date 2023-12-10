@@ -1,0 +1,149 @@
+.classes {
+    background: url("../images/dark-bg.png");
+    background-repeat-y: no-repeat;
+    background-repeat-x: repeat;
+}
+
+.carousel {
+    background: url("../images/dark-bg.png");
+}
+
+.frame {
+    &-desc {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    &-card {
+        box-shadow: 2px 2px 11px 1px rgba(0, 0, 0, 0.48);
+
+
+
+        hr {
+            border-radius: 20px;
+            background-color: rgba(106, 106, 106, 0.183);
+            width: 1px;
+            height: inherit;
+            border: 0;
+        }
+
+        .photo-card {
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+
+            width: 100%;
+        }
+    }
+
+    &-container {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-family: $default-font-name;
+        letter-spacing: 0;
+
+    }
+
+    &-title {
+        display: flex;
+        gap: 10px;
+
+
+        .title-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 20px;
+        }
+    }
+
+}
+
+.color-line {
+    background-color: $orange;
+    width: 20%;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.photo {
+    margin-top: 80px;
+    width: 100vw;
+}
+
+.class {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include media(sm) {
+        margin-top: 50px;
+
+    }
+
+    &-title {
+        font-weight: 900;
+
+        @include media(sm) {
+            margin-top: 50px;
+        }
+    }
+
+    &-sub {
+        font-family: $fallback;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+
+    &-prof {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-list {
+        display: flex;
+        gap: 20px;
+        padding: 55px;
+    }
+
+    &-desc {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+
+
+        align-items: center;
+        margin-top: 70px;
+
+        @include media(md) {
+            align-items: flex-start;
+            margin-top: 30px;
+
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-page {
+        margin-top: 80px;
+
+        &-desc {
+            margin-top: 10px;
+        }
+
+        &-name {
+            font-family: $fallback;
+            font-weight: 700;
+            font-size: 28px;
+        }
+    }
+
+}

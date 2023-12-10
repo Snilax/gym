@@ -1,0 +1,119 @@
+@include grid();
+
+.nav__btn {
+    @include media-m(sm) {
+        display: none;
+    }
+}
+
+.app-menu {
+    display: none;
+
+    @include media(sm) {
+        display: flex;
+        position: fixed;
+        list-style: none;
+        right: 0;
+        top: 0;
+        padding-top: 100px;
+        flex-direction: column;
+        gap: 64px;
+        height: 100%;
+        width: 220px;
+        background-color: #000;
+        z-index: 200;
+        align-items: center;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+    }
+}
+
+.menu-open {
+    @include media(sm) {
+        transform: translateX(0%) !important;
+    }
+}
+
+.header {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    top: 0;
+    z-index: 1100;
+}
+
+.nav {
+    background: linear-gradient(#000, #000);
+    display: flex;
+    padding-top: 20px;
+    position: relative;
+    justify-content: space-between;
+
+    @include media(sm) {
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 20px;
+
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        width: $default-width;
+        align-items: center;
+        margin: 0 auto;
+
+        @include media(lg) {
+
+            width: 992px;
+
+        }
+
+        @include media(md) {
+            .logo {
+                width: 100px;
+            }
+
+            width: 90%;
+            padding-bottom: 20px;
+        }
+
+        @include media(sm) {
+
+            .search {
+                display: none;
+                padding-right: 30px;
+            }
+        }
+
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        gap: 33px;
+
+        @include media(md) {
+            gap: 20px;
+
+        }
+
+        @include media(sm) {
+            display: none;
+        }
+    }
+
+    &__item {}
+
+    &__link {
+        font-size: 16px;
+
+        @include media(md) {
+            font-size: 14px;
+            letter-spacing: 0px;
+
+        }
+
+    }
+
+}

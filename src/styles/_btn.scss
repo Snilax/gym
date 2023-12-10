@@ -1,0 +1,18 @@
+.btn {
+    font-family: $opensans-font;
+    text-transform: uppercase;
+    padding: 20px 56px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 1.12px;
+    line-height: 20px;
+    text-decoration: none;
+    background: $def-btn-bg-color;
+    color: $white-color;
+
+    &:hover {
+        opacity: 0.7;
+        transition: 0.3s ease-in-out;
+    }
+}

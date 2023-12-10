@@ -1,0 +1,67 @@
+.app-form {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    width: 1050px;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(rgba(97, 97, 109, 0.2) 0%, rgba(59, 66, 74, 0.8) 100%);
+    margin: 0 auto;
+
+    @include media(md) {
+        width: 100%;
+
+    }
+
+    label {
+        width: 100%;
+    }
+
+    input {
+        font-size: 18px;
+        padding: 5px;
+        background-color: white;
+        border: 0;
+        color: #000;
+        border-radius: 5px;
+        height: 70px;
+        width: 100%;
+
+        @include media(lg) {
+            height: 40px;
+
+        }
+    }
+
+    #message {
+        height: 120px;
+        line-height: 70px;
+        vertical-align: top;
+
+        @include media(lg) {
+            height: 80px;
+
+        }
+    }
+
+    input#message::-webkit-input-placeholder {
+        vertical-align: middle;
+    }
+
+    .submit-btn {
+        cursor: pointer;
+        transition-duration: 0.2s;
+        margin: 10px auto;
+        font-size: 20px;
+        color: #fff;
+        height: 100px;
+        width: 100%;
+        border-radius: 10px;
+        border: solid 5px #F66000;
+        background-color: #F66000;
+    }
+}

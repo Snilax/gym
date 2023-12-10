@@ -1,0 +1,59 @@
+.footer {
+    margin-top: 250px;
+    background: url("../images/dark-bg.png");
+
+    @include media(sm) {
+        margin-top: 5px;
+
+    }
+}
+
+.subscribe-form {
+    position: relative;
+    overflow: hidden;
+
+    input {
+        padding: 5px;
+        background-color: white;
+        border: 0;
+        border-radius: 5px;
+        height: 70px;
+        width: 100%;
+        color: #000;
+    }
+
+    button {
+        position: absolute;
+        right: 15px;
+        background: #f66000;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #f66000;
+        border-radius: 10px;
+        top: 15px;
+        color: white;
+    }
+
+    button i {
+        color: #fff;
+        font-size: 22px;
+        transform: rotate(-6deg);
+    }
+}
+
+.h4 {
+    &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 25%;
+        background: $orange;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.data-item {
+    display: flex;
+    gap: 15px;
+}

@@ -1,0 +1,31 @@
+// colors
+$white-color: #fff;
+$black-color: #000;
+$orange: #F66000;
+$mid-orange: #FFBDAC;
+$light-orange: #FFEBE6;
+$gray-tp: rgba(205, 205, 205, 0.13);
+$gray-font: rgba(234, 234, 234, 0.65);
+// fonts
+$default-font-name: 'Comfortaa', sans-serif;
+$fallback: Arial, Helvetica, sans-serif;
+$default-font-size: 18px;
+$cinzel-font: 'Cinzel Decorative', serif;
+$poiret-font: 'Poiret One', sans-serif;
+$main-font: $default-font-name, $fallback;
+$def-btn-bg-color: orange;
+// containers
+$container-padding: 15px;
+$container-max-width: 1200px;
+$gap: 15px;
+$defaulp-count-col: 12;
+$default-width: 1200px;
+
+$breack-points: (
+    "lg": 1200px,
+    "md": 992px,
+    "sm": 768px,
+    "xs": 576px,
+    "xxs": 480px,
+    "xxxs": 320px
+);

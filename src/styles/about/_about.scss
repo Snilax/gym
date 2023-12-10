@@ -1,0 +1,17 @@
+.about-btn {
+    background-color: $light-orange;
+    color: $orange;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.coach {
+
+
+    &__title {
+        letter-spacing: 0cap;
+    }
+}
