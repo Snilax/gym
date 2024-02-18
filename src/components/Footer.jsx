@@ -4,6 +4,7 @@ import Geo from "../images/geo.svg";
 import Phone from "../images/phone.svg";
 import mail from "../images/mail.svg";
 import { useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Footer() {
     const [footerMail, setFooterMail] = useState("");
@@ -39,11 +40,33 @@ function Footer() {
                             <div className="hr"></div>
                         </h4>
                         <ul className="data-list flex flex-col gap-5">
-                            <li className="data-item"><a href="">Home</a></li>
-                            <li className="data-item"><a href="">About us</a></li>
-                            <li className="data-item"><a href="">Classes</a></li>
-                            <li className="data-item"><a href="">Blog</a></li>
-                            <li className="data-item"><a href="">Contact us</a></li>
+                            <li className="data-item">
+                                <Link className='nav__link text-2xl' to="/#Home">Home
+                                </Link></li>
+                            <li className="data-item">
+                                <Link className='nav__link text-2xl' to="/#About">
+                                    About us
+                                </Link></li>
+                            <li className="data-item">
+                                <Link className='nav__link text-2xl' to="/Classes">
+                                    Classes
+                                </Link></li>
+                            <li className="data-item">
+                                <Link className='nav__link text-2xl' to="/Trainers/">
+                                    Trainers
+                                </Link></li>
+                            <li className="data-item">
+                                <Link className='nav__link text-2xl' to="/#Price">
+                                    Price
+                                </Link></li>
+                            <li className="data-item">
+                                <Link className='nav__link text-2xl' to="/#Form">Form
+                                </Link></li>
+
+                            <li className="data-item">
+                                <Link className='nav__link text-2xl' to="/#Footer">Contact us
+                                </Link></li>
+
                         </ul>
                     </div>
                     <div className="col-3 col-md-6 col-sm-12">

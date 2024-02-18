@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
-const url = "http://localhost:8080/trainers";
+const url = "https://snilax-gym-api.onrender.com/trainers";
 
 function Trainers() {
     const [trainers, setTrainers] = useState(() => {

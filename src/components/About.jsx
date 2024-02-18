@@ -32,11 +32,13 @@ function About() {
                             vestibulum ante ipsum primis.
                         </p>
                         <div className=" trainer text-black mt-10">
-                            <div className="flex flex-wrap">
-                                <img className=" w-24 h-24" src={coachAvatar} alt="" />
-                                <div className="coach__info flex flex-col justify-center">
-                                    <h4 className="coach__title font-bold text-4xl">Denis Robinson</h4>
-                                    <p>Our Coach</p>
+                            <div className="flex flex-wrap justify-center gap-4">
+                                <div className="flex gap-2">
+                                    <img className=" w-24 h-24" src={coachAvatar} alt="" />
+                                    <div className="coach__info flex flex-col justify-center">
+                                        <h4 className="coach__title font-bold text-4xl">Denis Robinson</h4>
+                                        <p>Our Coach</p>
+                                    </div>
                                 </div>
                                 <a href="#Classes" className='start-btn md:my-12 md:w-48 md:text-base bg-orange text-white rounded-xl p-6 w-96 text-center font-semibold text-4xl'>Explore More </a>
                             </div>

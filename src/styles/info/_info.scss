@@ -13,7 +13,7 @@
 
     @include media(sm) {
         flex-direction: column;
-        width: 50%;
+        width: 60%;
         height: 100%;
         gap: 50px;
         padding: 40px;
@@ -36,9 +36,14 @@
 
     &-trainers {
         margin-top: 350px;
+
+        @include media(md) {
+            margin-top: -2px;
+
+        }
+
         background: url("../images/dark-bg.png");
-        background-position-y: 110px;
-        background-repeat-y: no-repeat;
+        background-repeat-y: repeat;
         background-repeat-x: repeat;
     }
 
@@ -59,6 +64,7 @@
 
 .coach {
     background: url("../images/dark-bg.png");
+    background-position-y: 20px;
     margin-top: 80px;
     display: flex;
     justify-content: center;

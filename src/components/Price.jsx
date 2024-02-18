@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 function Price() {
 
-    const url = "http://localhost:8080/plans";
+    const url = "https://snilax-gym-api.onrender.com/plans";
     const [plans, setPlans] = useState(() => {
         return JSON.parse(window.localStorage.getItem(url)) || [];
     });

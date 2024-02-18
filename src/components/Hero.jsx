@@ -4,7 +4,7 @@ import frm from "../images/frm1.png";
 function Hero() {
 
     return (
-        <div className="hero mt-20" id="Home">
+        <div className="hero mt-16" id="Home">
             <div className="container">
                 <div className="row ">
                     <div className="col-8 xs:w-64 xs:min-w-full ">

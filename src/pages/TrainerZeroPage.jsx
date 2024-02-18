@@ -15,7 +15,7 @@ let coachName3;
 let coachName4;
 
 function TrainerZeroPage(count) {
-    const url = "http://localhost:8080/trainers";
+    const url = "https://snilax-gym-api.onrender.com/trainers";
 
     const [trainers, setTrainers] = useState(() => {
         return JSON.parse(window.localStorage.getItem(url)) || [];

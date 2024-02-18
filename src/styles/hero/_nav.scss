@@ -1,6 +1,10 @@
 @include grid();
 
 .nav__btn {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+
     @include media-m(sm) {
         display: none;
     }

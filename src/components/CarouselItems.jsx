@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 function CarouselItem() {
 
-    const url = "http://localhost:8080/carousel";
+    const url = "https://snilax-gym-api.onrender.com/carousel";
     const [carouselItems, setCarouselItems] = useState(() => {
         return JSON.parse(window.localStorage.getItem(url)) || [];
     });
@@ -64,7 +64,7 @@ function CarouselItem() {
 
     return (
         <>
-            <div className="carousel mb-12">
+            <div className="carousel pb-28">
                 <Carousel
                     infinite
                     additionalTransfrom={-20}

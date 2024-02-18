@@ -13,7 +13,7 @@ let className3;
 let className4;
 
 function ClassPage(count) {
-    const url = "http://localhost:8080/carousel";
+    const url = "https://snilax-gym-api.onrender.com/carousel";
 
     const [trainers, setTrainers] = useState(() => {
         return JSON.parse(window.localStorage.getItem(url)) || [];
